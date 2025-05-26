@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.container {
+	@apply w-full px-3 mx-auto min-[576px]:max-w-[540px] min-[768px]:max-w-[720px] min-[992px]:max-w-[960px] min-[1200px]:max-w-[1140px] min-[1400px]:max-w-[1320px];
+}
+
+.modal {
+	@apply fixed top-0 left-0 z-50 hidden w-full h-full overflow-x-hidden overflow-y-auto outline-0 bg-[#00000060];
+}
+
+.modal-dialog {
+	@apply relative w-auto h-full place-content-center min-[576px]:max-w-[500px] m-auto pointer-events-none;
+}
+
+.modal-content {
+	@apply relative flex flex-col w-full pointer-events-auto bg-white bg-clip-padding border border-[#0000002d] rounded-[0.375rem] outline-0 max-[575.98px]:h-full max-[575.98px]:border-0 max-[575.98px]:rounded-none;
+}
+
+.modal-body {
+	@apply relative grow shrink basis-auto p-4 max-[575.98px]:overflow-y-auto;
+}
+.input {
+	@apply w-full border rounded p-2 mt-2 dark:text-white dark:bg-gray-600 border-[#333] dark:border-white placeholder:text-gray-500 dark:placeholder:text-gray-300;
+}

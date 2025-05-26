@@ -1,0 +1,12 @@
+/* custom spin animation for theme button */
+.spin {
+	animation: spin 1s ease-in-out 1;
+}
+@keyframes spin {
+	from {
+		rotate: 0deg;
+	}
+	to {
+		rotate: 360deg;
+	}
+}
