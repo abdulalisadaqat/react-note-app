@@ -4,6 +4,12 @@ A modern, responsive note-taking app built with **React**, **Tailwind CSS**, and
 
 ---
 
+## 📺 Live Preview
+
+https://react-note-app-silk.vercel.app/
+
+---
+
 ## 🚀 Features
 
 - ✅ Create and manage notes
